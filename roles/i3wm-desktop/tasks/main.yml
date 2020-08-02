@@ -1,0 +1,5 @@
+- name: Will copy i3 config file
+  copy:
+    src: i3/config
+    dest: "{{ I3ConfigDir }}/"
+

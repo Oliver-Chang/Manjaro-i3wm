@@ -1,0 +1,4 @@
+ProfilePath: $HOME/.profile
+EditorConfigPath: $HOME/editorconfig
+PipConfigDir: $HOME/.pip
+GitConfigPath: $HOME/.gitconfig

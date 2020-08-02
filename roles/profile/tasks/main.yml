@@ -1,0 +1,24 @@
+- name: Set user profile
+  copy:
+    dest: "{{ ProfilePath }}"
+    src: profile
+
+- name: Set user editorconfig
+  copy:
+    dest: "{{ EditorConfigPath }}"
+    src: editorconfig
+
+- name: Create a directory if it does not exist
+  file:
+    path: "{{ PipConfigDir }}"
+    state: directory
+
+- name: Will copy pip config file to remote
+  copy:
+    src: douban.conf
+    dest: "{{ PipConfigDir }}/pip.conf"
+
+- name: Will copy gitconfig file
+  copy:
+    src: gitconfig
+    dest: "{{ GitConfigPath }}"

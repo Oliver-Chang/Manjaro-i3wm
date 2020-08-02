@@ -1,0 +1,4 @@
+- name: "Will install fcitx packages {{fcitx_packages}}"
+  become: yes
+  pacman:
+    name: "{{ fcitx_packages }}"

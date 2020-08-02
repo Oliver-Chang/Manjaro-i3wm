@@ -1,0 +1,9 @@
+AurPackage:
+  - google-chrome
+  - visual-studio-code-bin
+  - jdk11-adoptopenjdk
+  - clion
+  - pycharm-professional
+  - goland
+  - intellij-idea-ultimate-edition
+  - dropbox

@@ -1,0 +1,16 @@
+CommonPackage:
+  - base-devel
+  - yay
+  - git
+  - vim
+  - neovim
+  - make
+  - cmake
+  - clang
+  - lldb
+  - python-pip
+  - albert
+  - yarn
+  - telegram-desktop
+  - go
+  - rust

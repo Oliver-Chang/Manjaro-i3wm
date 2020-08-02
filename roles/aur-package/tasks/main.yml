@@ -1,0 +1,7 @@
+
+- name: "Will install Aur Package {{ AurPackage }}"
+  aur: 
+    use: yay
+    name: "{{ item }}"
+  with_items:
+    - "{{ AurPackage }}"

@@ -1,0 +1,6 @@
+- name: "Install latest {{ CommonPackage }}"
+  become: yes
+  pacman:
+    name: "{{ CommonPackage }}"
+    state: latest
+    update_cache: yes

@@ -1,0 +1,16 @@
+- name: Install package alacritty
+  become: yes
+  package:
+    state: latest
+    name: alacritty
+
+- name: Create alacritty config directory
+  file:
+    state: directory
+    path: $HOME/.config/alacritty
+
+- name: Init alacritty config file
+  copy:
+    src: alacritty.yml
+    dest: $HOME/.config/alacritty
+
