@@ -5,10 +5,6 @@ USER=oliver
 ssh_args= -C -o ControlMaster=auto -o ControlPersist=5d
 pipelining = True
 
-[mi]
-# 192.168.50.200 ansible_sudo_pass='linux'
-192.168.50.216 ansible_sudo_pass='linux'
-
 [desktop]
 localhost ansible_connection=local ansible_sudo_pass='linux'
 

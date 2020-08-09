@@ -1,7 +1,7 @@
-export TERMINAL=/usr/bin/termite
+export TERMINAL=/usr/bin/alacritty
 export QT_QPA_PLATFORMTHEME="qt5ct"
 export EDITOR=/usr/bin/nvim
-export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
+export GTK2_RC_FILES="${HOME}/.gtkrc-2.0"
 # fix "xdg-open fork-bomb" export your preferred browser from here
 export BROWSER=/usr/bin/google-chrome-stable
 
@@ -12,24 +12,34 @@ export XMODIFIERS=@im=fcitx
 
 # 环境变量
 # golang
-export GOPATH="$HOME/go"
-export GOPATH="$GOPATH:$HOME/Workspace/go"
+export GOPATH="${HOME}/go"
 export GO111MODULE=on
-export PATH="$PATH:${GOPATH//://bin:}/bin"
-export GOPROXY=https://goproxy.io
+export PATH="${PATH}:${GOPATH}/bin"
+export GOPROXY=https://goproxy.cn
 
 # nodejs
 # export ="$HOME/.local/nodejs"
-export NODE_PATH="$HOME/.local/nodejs"
-export PATH="$PATH:${NODE_PATH}/bin"
+export NODE_PATH="${HOME}/.local/nodejs"
+export PATH="${PATH}:${NODE_PATH}/bin"
 
 # python
 export PYTHONPATH="${HOME}/.local/python3.7/site-packages"
 
-export PATH="$PATH:${HOME}/.local/bin"
+export PATH="${PATH}:${HOME}/.local/bin"
 # export PATH="$PATH:${HOME}/flutter/bin"
 
+# jruby
+export GEM_HOME="${HOME}/.local/gem"
+export PATH="${PATH}:${GEM_HOME}/bin"
 
+
+# scala sbt global repository
+# export SBT_OPTS="-Dsbt.override.build.repos=true"
+export JAVA_HOME=/usr/lib/jvm/default
+# export SBT_OPTS="$SBT_OPTS -Dhttps.proxyHost=127.0.0.1 -Dhttps.proxyPort=7777"
+
+export PATH="${PATH}:${HOME}/.local/bin"
+alias weather="curl http://wttr.in/$1"
 export TERM=xterm-256color
 
 

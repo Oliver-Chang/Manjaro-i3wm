@@ -1,3 +1,4 @@
+SSClientConfigDir: /etc/shadowsocks
 ServerHost: 
 ServerPort: 
 SSPassword: 

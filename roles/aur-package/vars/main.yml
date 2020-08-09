@@ -1,9 +1,9 @@
 AurPackage:
   - google-chrome
   - visual-studio-code-bin
+    #- dropbox
   - jdk11-adoptopenjdk
-  - clion
+    #- clion
   - pycharm-professional
   - goland
   - intellij-idea-ultimate-edition
-  - dropbox

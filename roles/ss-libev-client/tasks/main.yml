@@ -1,12 +1,19 @@
 - name: "Install ss-libev"
+  become: yes
   package:
     name: "shadowsocks-libev"
     state: latest
 
+- name: "Create {{ SSClientConfigDir }}  directory if it does not exist"
+  become: yes
+  file:
+    path: "{{ SSClientConfigDir }}"
+    state: directory
+
 - name: "Create shadowsock cleint vultr config file"
   become: yes
   template:
-    dest: /etc/shadowsocks/vultr.json
+    dest: "{{ SSClientConfigDir }}/vultr.json"
     src: ss-client.j2
 
 - name: "Enable and start ss-libev-client service"

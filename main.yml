@@ -13,6 +13,6 @@
     - sshd
     - powerline-fonts
     - i3wm-desktop
-    # - pip-package
+    - pip-package
     # - aur-package
 

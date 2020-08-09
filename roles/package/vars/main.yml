@@ -1,6 +1,7 @@
 CommonPackage:
   - base-devel
   - yay
+  - fish
   - git
   - vim
   - neovim
